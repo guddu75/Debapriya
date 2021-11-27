@@ -1,7 +1,25 @@
 {
-    "name": "debapriya",
-    "version": "1.0.0",
-    "bin": {
-        "debapriya" : "index.js"
-    }
+  "name": "debapriya",
+  "version": "1.0.0",
+  "bin": {
+    "debapriya": "index.js"
+  },
+  "description": "Get to know about Debapriya via npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guddu75/Debapriya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guddu75/Debapriya/issues"
+  },
+  "homepage": "https://github.com/guddu75/Debapriya#readme",
+  "dependencies": {
+    "clear-any-console": "^1.16.2"
+  }
 }
