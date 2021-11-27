@@ -13,8 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/guddu75/Debapriya.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Debapriya Majumder",
+    "email": "guddumajumder75@gmail.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/guddu75/Debapriya/issues"
   },
@@ -27,5 +30,4 @@
     "debapriya",
     "majumder"
   ]
-  
 }
