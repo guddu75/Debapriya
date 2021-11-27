@@ -21,5 +21,11 @@
   "homepage": "https://github.com/guddu75/Debapriya#readme",
   "dependencies": {
     "cli-welcome": "^2.2.2"
-  }
+  },
+  "keywords": [
+    "Debapriya Majumder",
+    "debapriya",
+    "majumder"
+  ]
+  
 }
