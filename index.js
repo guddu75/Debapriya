@@ -2,6 +2,8 @@
 
 const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
+const chalk = require('chalk');
+
 
 welcome({
 	title: pkgJSON.name,
@@ -15,15 +17,14 @@ welcome({
 });
 
 console.log(`
-Debapriya Majumder
+${chalk.green.bold.inverse(' Debapriya Majumder ')}
 
-Undergard Student at Jalpaiguri Government Enginnering College
+${chalk.italic("Undergard Student at Jalpaiguri Government Enginnering College")}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
- dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
- officia deserunt mollit anim id est laborum.
-
+🔗 ${chalk.hex(`0077b5`).bold(" Linkedin ")} : ${chalk.dim("https://www.linkedin.com/in/debapriya-majumder-950184135")}
+🔗 ${chalk.hex(`6e5494`).bold(" Codeforces ")} : ${chalk.dim("https://codeforces.com/profile/guddu75")}
+🔗 ${chalk.hex(`00bce4`).bold(" Codechef ")} : ${chalk.dim("https://www.codechef.com/users/guddu75")}
+🔗 ${chalk.hex(`c9510c`).bold(" Github ")} : ${chalk.dim("https://github.com/guddu75")}
+🔗 ${chalk.hex(`0abf53`).bold(" Leetcode ")} : ${chalk.dim("https://leetcode.com/guddu75/")}
 
 `);

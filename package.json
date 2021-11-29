@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/guddu75/Debapriya#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "cli-welcome": "^2.2.2"
   },
   "keywords": [
