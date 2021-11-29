@@ -3,6 +3,7 @@
 const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
 const chalk = require('chalk');
+const logSymbols = require('log-symbols');
 
 
 welcome({
