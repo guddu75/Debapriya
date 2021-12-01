@@ -1,23 +1,11 @@
 #!/usr/bin/env node
-
-const welcome = require('cli-welcome');
-const pkgJSON = require('./package.json');
 const chalk = require('chalk');
-const logSymbols = require('log-symbols');
+const init = require('./utils/init');
 
+init();
 
-welcome({
-	title: pkgJSON.name,
-	tagLine: `Hi. 🙌 Nice to meet you`,
-    description : pkgJSON.description,
-	bgColor: `#FADC00`,
-	color: `#000000`,
-	bold: true,
-	clear: true,
-	version: pkgJSON.version
-});
-
-console.log(`
+(() => {
+	console.log(`
 ${chalk.green.bold.inverse(' Debapriya Majumder ')}
 
 ${chalk.italic("Undergard Student at Jalpaiguri Government Enginnering College")}
@@ -28,4 +16,6 @@ ${chalk.italic("Undergard Student at Jalpaiguri Government Enginnering College")
 🔗 ${chalk.hex(`c9510c`).bold(" Github ")} : ${chalk.dim("https://github.com/guddu75")}
 🔗 ${chalk.hex(`0abf53`).bold(" Leetcode ")} : ${chalk.dim("https://leetcode.com/guddu75/")}
 
-`);
+	`);
+})();
+

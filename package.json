@@ -24,6 +24,8 @@
   "homepage": "https://github.com/guddu75/Debapriya#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "cli-check-node": "^1.3.4",
+    "cli-handle-unhandled": "^1.1.1",
     "cli-welcome": "^2.2.2",
     "log-symbols": "^4.1.0"
   },
