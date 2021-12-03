@@ -1,21 +1,22 @@
 #!/usr/bin/env node
-const chalk = require('chalk');
+
 const init = require('./utils/init');
+const data = require('./utils/data');
+const cli = require('./utils/cli');
+const debug = require('./utils/debug');
 
-init();
+const flags = cli.flags;
+const inputs = cli.input;
 
-(() => {
-	console.log(`
-${chalk.green.bold.inverse(' Debapriya Majumder ')}
 
-${chalk.italic("Undergard Student at Jalpaiguri Government Enginnering College")}
+(async () => {
+	init(flags.clear);
+	inputs.includes('help') && cli.showHelp(0);
+	console.log(data.name);
+	console.log();
+	flags.bio && console.log(data.bio);
+	flags.social && console.log(data.social);
+	debug(flags.debug,cli);
 
-🔗 ${chalk.hex(`0077b5`).bold(" Linkedin ")} : ${chalk.dim("https://www.linkedin.com/in/debapriya-majumder-950184135")}
-🔗 ${chalk.hex(`6e5494`).bold(" Codeforces ")} : ${chalk.dim("https://codeforces.com/profile/guddu75")}
-🔗 ${chalk.hex(`00bce4`).bold(" Codechef ")} : ${chalk.dim("https://www.codechef.com/users/guddu75")}
-🔗 ${chalk.hex(`c9510c`).bold(" Github ")} : ${chalk.dim("https://github.com/guddu75")}
-🔗 ${chalk.hex(`0abf53`).bold(" Leetcode ")} : ${chalk.dim("https://leetcode.com/guddu75/")}
-
-	`);
 })();
 

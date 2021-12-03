@@ -2,7 +2,7 @@ const checkNode = require('cli-check-node');
 const unhandled = require('cli-handle-unhandled');
 const welcome = require('cli-welcome');
 const pkgJSON = require('../package.json');
-module.exports = () => {
+module.exports = (clear) => {
     unhandled();
     welcome({
         title: pkgJSON.name,
@@ -11,7 +11,7 @@ module.exports = () => {
         bgColor: `#FADC00`,
         color: `#000000`,
         bold: true,
-        clear: true,
+        clear,
         version: pkgJSON.version
     });
     checkNode('12');
